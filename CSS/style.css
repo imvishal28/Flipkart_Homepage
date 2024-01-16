@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --main-bg-color: #2874f0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+   background: var(--main-bg-color);
+   padding: 0 23px;
+   font-family: 'Lato', sans-serif;
+    /* border: 2px solid ; */
+    
+}
+nav{
+    display: flex;
+    
+}
+.logo
+{
+    /* padding-top: 1vh; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    /* height: 1vh; */
+    
+}
+.logo img{
+    width: 150px;
+    /* padding: 0 25px; */
+        padding: 13px;
+    
+   
+}
+nav ul{
+  
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    /* color: rgb(22, 90, 236); */
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 27px;
+    margin: 0 16px 0 56px;
+    border-radius: 2px;
+    padding:0 12px ;
+}
+.search button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.slider img{
+    height: 282px;
+    width: 80vw;
+    margin: 10px 10vw;
+
+}
+.card{
+    max-width: 91vw;
+    margin:37px  auto;
+}
+
+.card img:hover{
+    scale: 10.5px;
+} 
+
+.cards{
+    display: flex;
+    overflow: scroll;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+ } 
+.card h2{
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+.container{
+    /* min-height: 80.2vh; */
+    min-height: calc(100vh-58px-12vh);
+}
+ 
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+@media screen and (max-width:1000px){
+    
+    nav{
+        flex-direction: column;
+    }
+   .logo img{
+        justify-content: center;
+        margin: 12px 0;
+
+    }
+     nav ul{
+        /* margin-left: 225px; */
+        justify-content: center;
+        height: 34px;
+     }
+     nav ul li{
+        /* margin: 15px; */
+        height: 50px;
+     }
+
+     .search{
+        justify-content: center;
+     }
+     .search input{
+        margin: 12px 16px;
+        justify-content: center;
+     }
+     .slider{
+        height: 20vh; 
+        margin-bottom: 150px;
+     }
+
+     .card-item img{
+        width: 140px;
+        margin-left: 2px;
+     }
+      
+}
